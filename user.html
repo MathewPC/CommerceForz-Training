@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function jsFun()
+        {
+          var val, elem;
+          val = parseInt(document.getElementById("num").value);
+          if(val)
+          {
+            if(val<10)
+              document.getElementById("paraTwo").innerHTML = "Less than 10";
+            else
+              document.getElementById("paraTwo").innerHTML = "Greater than 10";
+          }
+        }
+        </script>
+</head>
+<body>
+    <p id="paraOne">Enter a Number: <input id="num">
+        <button onclick="jsFun()">Enter</button></p>
+        <p id="paraTwo"></p>
+        
+</body>
+</html>

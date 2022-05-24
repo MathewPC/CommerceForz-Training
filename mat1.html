@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html>
-    <title>
-        WELCOME
-        <link rel="stylesheet" href="main2.sass">
-    </title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
     <body>
-        <h1> 
-            About Myself
-        </h1>
-        <p>
-            I am Mathew P C. I am coming from Pandanad West.
-    <button type="submit">
-        submit
-    </button>
-            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3937.028654153747!2d76.55476511473688!3d9.33072829331194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06222cda5622c9%3A0xdc3fc112da90a9cd!2sSt.%20Mary&#39;s%20orthodox%20Syrian%20Church%20Pandanad%20West!5e0!3m2!1sen!2sin!4v1652758515278!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+
+        <h2>What Can JavaScript Do?</h2>
         
-    </p>
-    </body>
+        <p>JavaScript can change HTML attribute values.</p>
+        
+        <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+        
+        <button onclick="document.getElementById('myImage').src='bulbon.jfif'" type="button">Turn on the light</button>
+        
+        <img id="myImage" src="bulbon.jfif" style="width:100px">
+        
+        <button onclick="document.getElementById('myImage').src='bulbon.jpeg'" type="button">Turn off the light</button>
+        
+        </body> 
+</body>
 </html>
