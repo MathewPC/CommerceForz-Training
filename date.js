@@ -1,6 +1,6 @@
-// program to display the date and time
-// get date and time
-const date = new Date(2017, 2, 12, 9, 25, 30);
+// program to display the date
+// get local machine date time
+const date = new Date();
 
 // get the date as a string
 const n = date.toDateString();
