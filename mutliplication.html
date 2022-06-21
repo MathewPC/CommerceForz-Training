@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="multi.css">
+</head>
+<body>
+    
+    <h1>Please Choose the number you would like to see the multiplication table for:</h1>
+
+    <div class="center">
+      <select id="number" name="number">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+  
+      <button id="button">Submit</button>
+  </div>
+    <div class="output" id="output"></div>  
+    <script>
+        let num;
+let outputList = document.querySelector(".output");
+
+document.getElementById("button").onclick = function() {
+  num = Number(document.getElementById("number").value);
+  document.getElementById("output").innerText = "";
+    for (let i = 1; i <= 12; i++) {
+      let outputData = document.createElement('div');
+      outputData.innerText = `${num} * ${i} = ${num * i}`;
+      outputList.appendChild(outputData);
+    }
+}
+    </script>
+</body>
+</html>
