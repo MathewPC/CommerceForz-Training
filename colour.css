@@ -1,0 +1,8 @@
+function toggleEvenColor ()
+ {
+  let spanElements = document.querySelectorAll('#numbers span');
+      spanElements.forEach function()
+       {
+         item.style.backgroundColor = 'red';
+   }
+    }

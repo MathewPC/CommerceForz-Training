@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+  </head>
+  <body>
+    <div id="show-numbers">
+      <span>11</span>
+      <span>12</span>
+      <span>13</span>
+      <span>14</span>
+      <span>15</span>
+     
+      <button id="btn" onclick="toggleEvenColor()">toggle even number</button>
+    </div>
+  </body>
+  <script>
+
+    function toggleEvenColor()
+     {
+      var numbers = document.getElementsByTagName("span");
+      
+      console.log(numbers);
+      
+                    for (var i = 0; i <numbers.length; i++)
+                     {
+            let v = numbers[i].innerHTML;
+                if (v % 2 == 0)
+                 {
+                    numbers[i].style.backgroundColor = "red";
+                }
+               
+            }
+            
+        }
+        
+      
+   
+  </script>
+</html>
